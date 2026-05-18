@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adega Malibu</title>
 
+<!-- Fonte Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Biblioteca de Ícones (Font Awesome) para o ícone do WhatsApp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
 *{
@@ -16,12 +20,14 @@
 }
 
 body{
-    background:#0d0d11;
+    /* Fundo em degradê moderno usando as cores do tema */
+    background: linear-gradient(135deg, #0d0d11 0%, #1a102f 50%, #0d0d11 100%);
+    background-attachment: fixed;
     color:#f3f3f6;
 }
 
 header{
-    background:linear-gradient(rgba(13,13,17,0.7), rgba(13,13,17,0.9)), url('imgMa/Adega\ malibu.png');
+    background:linear-gradient(rgba(13,13,17,0.7), rgba(13,13,17,0.9)), url('imgMa/Adega malibu.png');
     background-size:cover;
     background-position:center;
     text-align:center;
@@ -37,27 +43,9 @@ header h1{
 }
 
 header p{
-    margin:15px 0 25px;
+    margin:15px 0 0px; /* Ajustado margem para quando não tem botão abaixo */
     font-size:1.1rem;
     color: #cbd5e1;
-}
-
-.btn{
-    display:inline-block;
-    background:#a855f7;
-    color:#fff;
-    padding:15px 30px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-    box-shadow: 0 4px 14px rgba(168, 85, 247, 0.4);
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#c084fc;
-    transform:scale(1.05);
-    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.6);
 }
 
 section{
@@ -117,15 +105,6 @@ h2{
     font-size: 1.15rem;
 }
 
-.depoimento{
-    background:#161622;
-    padding:30px;
-    border-radius:12px;
-    text-align:center;
-    max-width:700px;
-    margin:auto;
-}
-
 footer{
     background:#050508;
     text-align:center;
@@ -134,18 +113,28 @@ footer{
     color: #475569;
 }
 
+/* Botão fixo no canto inferior esquerdo */
 .whatsapp-fixo{
     position:fixed;
     bottom:20px;
-    right:20px;
+    left:20px;
     background:#25D366;
-    padding:15px 18px;
+    padding:12px 22px;
     border-radius:50px;
     text-decoration:none;
     color:#fff;
     font-weight:600;
-    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
     z-index:1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    transform: scale(1.05);
+    background: #20ba5a;
 }
 </style>
 </head>
@@ -153,10 +142,8 @@ footer{
 <body>
 
 <header>
-    <h1>WhatsApp</h1>
+    <h1>Adega Malibu</h1>
     <p>Bebidas trincando, carvão e gelo.</p>
-    <a class="btn" href="https://wa.me/1999100-3767" target="_blank">
-    </a>
 </header>
 
 <section>
@@ -191,7 +178,7 @@ footer{
 <section>
     <h2>Localização & Horário de Atendimento</h2>
     <div style="text-align:center;">
-        <p> Adega Malibu - Rua da Beleza, 570</p>
+        <p>Adega Malibu - Rua da Beleza, 570</p>
     </div>
 </section>
 
@@ -199,8 +186,9 @@ footer{
     © 2026 Adega Malibu - Todos os direitos reservados
 </footer>
 
-<a class="whatsapp-fixo" href="https://wa.me/1999100-3767" target="_blank">
-    Chamar no WhatsApp 📲
+<!-- Botão no canto esquerdo com o ícone integrado -->
+<a class="whatsapp-fixo" href="https://wa.me/5519991003767" target="_blank">
+    <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Chamar no WhatsApp
 </a>
 
 </body>
