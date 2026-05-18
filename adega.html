@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adega & Distribuidora Disk Gelada</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0d0d11;
+    color:#f3f3f6;
+}
+
+header{
+    background:linear-gradient(rgba(13,13,17,0.7), rgba(13,13,17,0.9)), url('imgMa/Adega\ malibu.png');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:100px 20px;
+    border-bottom: 2px solid #a855f7;
+}
+
+header h1{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#a855f7;
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+header p{
+    margin:15px 0 25px;
+    font-size:1.1rem;
+    color: #cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    background:#a855f7;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow: 0 4px 14px rgba(168, 85, 247, 0.4);
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#c084fc;
+    transform:scale(1.05);
+    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.6);
+}
+
+section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#a855f7;
+}
+
+.sobre{
+    text-align:center;
+    line-height:1.6;
+    max-width:700px;
+    margin:auto;
+    color: #94a3b8;
+}
+
+.cardapio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.item{
+    background:#161622;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    border: 1px solid #232336;
+    transition:0.3s;
+}
+
+.item:hover{
+    transform:translateY(-5px);
+    border-color: #a855f7;
+}
+
+.item h3{
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.item p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.preco{
+    font-weight:600;
+    margin-top:12px;
+    color: #22c55e;
+    font-size: 1.15rem;
+}
+
+.depoimento{
+    background:#161622;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+footer{
+    background:#050508;
+    text-align:center;
+    padding:30px 20px;
+    font-size:0.9rem;
+    color: #475569;
+}
+
+.whatsapp-fixo{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    z-index:1000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Disk Gelada Adega</h1>
+    <p>Bebidas trincando, carvão, gelo e os melhores combos com entrega ultra-rápida! 🍻</p>
+    <a class="btn" href="https://wa.me/5500000000000" target="_blank">
+        Pedir no Delivery Agora
+    </a>
+</header>
+
+<section>
+    <h2>Sobre Nosso Delivery</h2>
+    <div class="sobre">
+        <p>
+        Sua festa ou churrasco não pode parar! Somos especialistas em entregar a sua bebida na temperatura ideal em tempo recorde. 
+        Trabalhamos com uma grande variedade de cervejas, destilados, refrigerantes, sucos, além de gelo e carvão. Peça pelo WhatsApp e receba no conforto da sua casa.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Mais Pedidos / Combos</h2>
+    <div class="cardapio">
+        <div class="item">
+            <h3>Combo Gin Tanqueray</h3>
+            <p>1 Garrafa de Gin Tanqueray 750ml + 4 Tônicas Antarctica Lata + Gelo de Coco.</p>
+            <div class="preco">R$ 139,90</div>
+        </div>
+
+        <div class="item">
+            <h3>Fardo Heineken Lata</h3>
+            <p>Pack com 12 unidades de Latas 350ml - Entregues trincando de gelada.</p>
+            <div class="preco">R$ 65,00</div>
+        </div>
+
+        <div class="item">
+            <h3>Combo Cavalo Branco</h3>
+            <p>1 Garrafa de Whisky White Horse 1L + 5 Energéticos Monster 473ml.</p>
+            <div class="preco">R$ 115,00</div>
+        </div>
+
+        <div class="item">
+            <h3>Kit Churrasco Básico</h3>
+            <p>1 Saco de Carvão 4kg + 1 Saco de Gelo Cubo 5kg + 1 Caixa de Acendedor.</p>
+            <div class="preco">R$ 38,00</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimento">
+        ⭐ ⭐ ⭐ ⭐ ⭐  
+        <p>"Salvou o rolê do final de semana! Chegou em menos de 20 minutos e a cerveja veio literalmente trincando de gelada. Recomendo muito!"</p>
+        <small style="display:block; margin-top:10px; color:#64748b;">- Matheus Ramos, Cliente fiel</small>
+    </div>
+</section>
+
+<section>
+    <h2>Localização & Horário de Atendimento</h2>
+    <div style="text-align:center;">
+        <p>Rua dos Boêmios, 777 - Vila Nova</p>
+        <p><strong>Entregas:</strong> Quinta a Sábado: 18h às 03h | Domingo: 12h às 22h</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Disk Gelada Adega - Todos os direitos reservados
+</footer>
+
+<a class="whatsapp-fixo" href="https://wa.me/5500000000000" target="_blank">
+    Chamar no WhatsApp 📲
+</a>
+
+</body>
+</html>
