@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adega Malibu</title>
 
-<!-- Fonte Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-<!-- Biblioteca de Ícones (Font Awesome) para o ícone do WhatsApp -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
@@ -43,7 +41,7 @@ header h1{
 }
 
 header p{
-    margin:15px 0 0px; /* Ajustado margem para quando não tem botão abaixo */
+    margin:15px 0 0px;
     font-size:1.1rem;
     color: #cbd5e1;
 }
@@ -113,27 +111,45 @@ footer{
     color: #475569;
 }
 
-/* Botão fixo no canto inferior esquerdo */
-.whatsapp-fixo{
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    background:#25D366;
-    padding:12px 22px;
-    border-radius:50px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:600;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
-    z-index:1000;
+/* Container fixo para organizar os botões verticalmente no canto esquerdo */
+.redes-fixas {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+/* Estilo base comum para ambos os botões */
+.btn-fixo {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: 0.3s;
 }
 
-.whatsapp-fixo:hover {
+.btn-fixo:hover {
     transform: scale(1.05);
+}
+
+/* Botão específico do Instagram com o degradê oficial */
+.instagram-fixo {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    margin-bottom: 10px; /* Espaço em relação ao botão do WhatsApp que vem abaixo */
+}
+
+/* Botão específico do WhatsApp */
+.whatsapp-fixo {
+    background: #25D366;
+}
+
+.whatsapp-fixo:hover {
     background: #20ba5a;
 }
 </style>
@@ -186,10 +202,15 @@ footer{
     © 2026 Adega Malibu - Todos os direitos reservados
 </footer>
 
-<!-- Botão no canto esquerdo com o ícone integrado -->
-<a class="whatsapp-fixo" href="https://wa.me/5519991003767" target="_blank">
-    <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Chamar no WhatsApp
-</a>
+<div class="redes-fixas">
+    <a class="btn-fixo instagram-fixo" href="https://instagram.com/seu_usuario" target="_blank">
+        <i class="fab fa-instagram" style="font-size: 1.3rem;"></i> Instagram
+    </a>
+
+    <a class="btn-fixo whatsapp-fixo" href="https://wa.me/5519991003767" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Chamar no WhatsApp
+    </a>
+</div>
 
 </body>
 </html>
